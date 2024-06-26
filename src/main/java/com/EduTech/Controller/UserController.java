@@ -76,7 +76,7 @@ public class UserController
 
 
     @DeleteMapping("/delete/{email}")
-    public String deleteByUserName(@PathVariable String email)
+    public String deleteByEmail(@PathVariable String email)
     {
         User P1 = repo.findByEmail(email);
         if(P1==null)
